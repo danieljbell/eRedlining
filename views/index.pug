@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  main
+    section.hero 
+      .site-width
+        .hero-content-container
+          h1 Prepare Contracts <span class="underline">Entirely</span> Online
+          h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui doloribus, voluptate ullam, quia architecto ab?
+          button.btn-primary.get-started Get Started!
+    section#prepare
+      .site-width
+        h3 <span class="underline">Prepare</span> your contract
+    section#send
+      .site-width
+        h3 <span class="underline">Send</span> your contract
+    section#redline
+      .site-width
+        h3 <span class="underline">Redline</span> your contract
+    section#sign
+      .site-width
+        h3 <span class="underline">Sign</span> your contract
+    section#get-started
+      .site-width
+        h3 Get Started <span class="underline">Today</span>
+        form(action="/create" method="POST")
+          label(for="Name") Name
+          input#name(type="text")
+          input#submit(type="submit")

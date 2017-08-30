@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #444; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Shadows Into Light', Helvetica, Arial, sans-serif; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 1.7em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1.25em; }
+
+h5 {
+  font-size: 1.1em; }
+
+h6 {
+  font-size: 1em; }
+
+/*
+==============================
+grid
+==============================
+*/
+.site-width {
+  width: calc(100% - 4rem);
+  max-width: 1280px;
+  margin: 0 auto; }
+
+/*
+==============================
+HEADER
+==============================
+*/
+.site-header {
+  position: relative;
+  z-index: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), transparent);
+  padding: 2rem 0 4rem;
+  color: #fff; }
+  .site-header a {
+    color: #fff;
+    text-decoration: none; }
+
+.site-logo a {
+  font-size: 2.5em;
+  font-family: 'Shadows Into Light', Helvetica, Arial, sans-serif; }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.site-header ul {
+  list-style-type: none;
+  padding-left: 0; }
+  .site-header ul li {
+    display: inline-block; }
+    .site-header ul li a {
+      font-size: 1.2em;
+      display: block;
+      padding: 0.25em 1em; }
+    .site-header ul li .btn-outline {
+      margin-left: 1em; }
+
+/*
+==============================
+HERO
+==============================
+*/
+.hero {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://unsplash.it/1280/600/?image=2);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 9rem 0 6rem;
+  text-align: center;
+  position: relative;
+  top: -11rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  min-height: 450px;
+  height: calc(100vh + 1.1rem);
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.85); }
+  .hero h2 {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    padding: 0 20vw; }
+  .hero .btn-primary {
+    font-size: 1.2em;
+    margin-top: 2rem; }
+  .hero .hero-content-container {
+    position: relative;
+    z-index: 0;
+    padding: 3rem 0;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.75), transparent 70%); }
+
+/*
+==============================
+utilities
+==============================
+*/
+.underline {
+  position: relative; }
+  .underline:after {
+    content: url(/images/underline.svg);
+    position: absolute;
+    left: -0.5rem;
+    right: -0.5rem;
+    top: calc(25% + 2px);
+    z-index: -1; }
+
+/*
+==============================
+buttons
+==============================
+*/
+.btn-primary {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 5px;
+  border: 0;
+  background-color: #42b0d8;
+  color: #fff;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 250ms ease-out;
+  cursor: pointer; }
+  .btn-primary:hover {
+    background-color: #2386aa; }
+
+.btn-outline {
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 250ms ease-out;
+  cursor: pointer; }
+  .btn-outline:hover {
+    background-color: #fff;
+    color: #444; }
+
+/*# sourceMappingURL=style.css.map */
